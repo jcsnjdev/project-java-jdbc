@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 
 public class SingleConnection {
 
-	private static String url = "jdbc:firebirdsql:localhost/3050:D:\\base\\complexohosp\\BANCO.FDB";
-	private static String user = "SYSDBA";
-	private static String pass = "152830";
+	private static String url = "jdbc:firebirdsql:localhost/3050:D:\\.arquivobanco";
+	private static String user = "userdb";
+	private static String pass = "senhadb";
 	private static Connection connection = null;
 
 	static {
@@ -24,7 +24,6 @@ public class SingleConnection {
 				Class.forName("org.firebirdsql.jdbc.FBDriver");
 				connection = DriverManager.getConnection(url, user, pass);
 				connection.setAutoCommit(false);
-				System.out.println("Conectou com sucesso!");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
