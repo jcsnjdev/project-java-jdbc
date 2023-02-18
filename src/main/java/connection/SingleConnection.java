@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class SingleConnection {
 
-	private static String url = "jdbc:firebirdsql:localhost/3050:D:\\.arquivobanco";
+	private static String url = "jdbc:firebirdsql:localhost/3050:D:\\arquivobanco";
 	private static String user = "userdb";
 	private static String pass = "senhadb";
 	private static Connection connection = null;
